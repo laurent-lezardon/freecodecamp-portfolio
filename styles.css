@@ -1,0 +1,70 @@
+/* init ========================================== */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* variables =================================== */
+:root {
+  --c-nav: gray;
+  --c-text-white: white;
+  --c-section: pink;
+}
+/* general classes ============================== */
+.flex {
+  display: flex;
+}
+.nostyle {
+  list-style: none;
+}
+
+/* fonts =========================================*/
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+}
+h1,
+h2,
+h3 {
+  font-family: Raleway, sans-serif;
+}
+
+/* header */
+header {
+  justify-content: end;
+  background-color: var(--c-nav);
+  position: fixed;
+  width: 100%;
+}
+#navbar li a {
+  display: block;
+  color: var(--c-text-white);
+
+  padding: 2rem 4rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#navbar li a:hover {
+  background-color: blue;
+}
+/* welcome section */
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+}
+.welcome {
+  height: 20%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  font-size: 5rem;
+}
+/* projects section */
